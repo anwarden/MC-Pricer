@@ -123,7 +123,6 @@ MCResult MonteCarloEngine::priceAmerican(const AmericanOption& option, double S0
             
             // Solve normal equations for a, b, c
             // This is a simplified version - for production, use proper linear algebra library
-            double meanX = sum_x / n;
             double meanY = sum_y / n;
             
             for (size_t j = 0; j < itmIndices.size(); ++j) {
