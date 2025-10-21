@@ -31,6 +31,10 @@ add_library(mcpricer_lib STATIC ${SOURCES})
 add_executable(mcpricer src/cpp/src/main.cpp)
 target_link_libraries(mcpricer mcpricer_lib)
 
+# Test executable
+add_executable(test_pricer src/cpp/tests/test_pricer.cpp)
+target_link_libraries(test_pricer mcpricer_lib)
+
 # Installation
 install(TARGETS mcpricer DESTINATION bin)
 install(TARGETS mcpricer_lib DESTINATION lib)
