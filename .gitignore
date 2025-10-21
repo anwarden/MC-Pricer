@@ -1,0 +1,40 @@
+# Build artifacts
+build/
+*.o
+*.a
+*.so
+*.dylib
+*.dll
+*.exe
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+*.egg
+.pytest_cache/
+.coverage
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# CMake
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# Examples output
+examples/*.txt
+examples/*.csv
+examples/*.png
